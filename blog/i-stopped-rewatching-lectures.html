@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>I stopped rewatching lectures and let AI quiz me instead - Alimkhan Yergebayev</title>
+<meta name="description" content="Trying one-to-one AI tutoring for OSSU intro-cs on Omarchy with pi + Obsidian." />
+<link rel="icon" href="../favicon_io/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png" />
+<link rel="apple-touch-icon" href="../favicon_io/apple-touch-icon.png" />
+<link rel="manifest" href="../favicon_io/site.webmanifest" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+<main>
+  <header class="topbar">
+    <a class="brand" href="../index.html"><img src="../favicon_io/favicon-32x32.png" alt="" width="28" height="28" /></a>
+    <nav>
+      <a href="../index.html">about</a>
+      <a href="../projects.html">projects</a>
+      <a href="../work.html">work</a>
+      <a href="../blog.html" class="selected">blog</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h2>I stopped rewatching lectures and let AI quiz me instead</h2>
+    <p class="place">Sep 8, 2026</p>
+
+    <p>I tried learning with AI, and it exceeded my expectations.</p>
+
+    <p>I'm preparing for university and decided to study CS in advance with the <a href="https://ossu.dev">OSSU curriculum</a>. I started from the very beginning even though I knew the foundations, just to make sure I had no gaps. But this time I did it differently, with AI. I remembered <a href="https://youtu.be/kzcI5F4tGiU">a video I watched a while ago on this topic</a> and tried replicating the system from it. The video explains the approach and demos it on some math topic.</p>
+
+    <p>The core idea is that AI is good for one-to-one learning. Normal learning is wasteful in two directions. One teacher teaches many students, so it can't be optimal for any single one, because the right path depends on what that student already knows. And one student learns from many sources, textbooks, videos, forums, so you pay switching costs and you never fully trust a new source. AI fixes the second part by aggregating many sources through one interface you trust, and adjusting to you.</p>
+
+    <p>The real value is not just asking AI. It's giving it teach and quiz tools. It first probe-quizzes you to map what you know, so it doesn't waste time teaching what you already hold, and it finds the gaps fast. This makes so much sense, yet I've seen almost nowhere with this actually implemented. Maybe I'll try packaging this setup later so less tech-savvy people can use it too.</p>
+
+    <p>Here's how it went for me.</p>
+
+    <p>I finally tried Linux for this. Installed <a href="https://omarchy.org">Omarchy</a>, then put the <a href="https://github.com/badlogic/pi-mono">pi agent harness</a> on top with an Opencode Go subscription for models. Pi is malleable just like Omarchy. I just asked the model to replicate the teaching system from the video and explain how to use it, and it did.</p>
+
+    <p>I kept <a href="https://obsidian.md">Obsidian</a> open on the side, and let Pi teach through the terminal. Everything got logged to markdown so I had notes to keep.</p>
+
+    <p>I didn't watch most of the intro-cs lectures. I read the generated notes and only sometimes looked through the slides, then mostly worked the practice material on my own. I didn't let the tutor touch my code. I wanted to own it and test whether it stuck. That got me through half the course in 4-5 days. The quizzes caught me on small Python nuances I thought I knew, like dictionaries and syntax.</p>
+
+    <p>The most useful part so far is speed. You find out fast whether you got it, and if not you just patch that gap. What's annoying is it over-quizzes. I asked a throwaway question while explaining agent harnesses to a friend and it started quizzing me on what AI models are. Still, worth trying yourself.</p>
+
+    <p>Thanks for reading! This is my first blog post. I hope I can keep this up and share useful things I try so you don't miss out too.</p>
+
+    <p class="blog-list"><a href="../blog.html">← back</a></p>
+  </div>
+</main>
+</body>
+</html>

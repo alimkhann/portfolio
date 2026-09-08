@@ -142,6 +142,16 @@ a.image-link {
   border-bottom: none;
 }
 
+.blog-list a {
+  color: var(--core-black);
+  border-bottom: none;
+}
+
+.blog-list a:hover {
+  color: var(--core-black);
+  border-bottom: 1px solid var(--core-black);
+}
+
 .photo {
   display: block;
   width: 100%;
